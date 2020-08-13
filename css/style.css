@@ -41,11 +41,11 @@
 }
 
 .sticky .navbar-menu a{ 
-    color:#111;
+    color: #111;;
 }
 
-.sticky .menu-toggler{ 
-    color:#111
+.sticky .menu-toggler span{
+    background-color:#111;
 }
 
 
@@ -72,6 +72,7 @@
     background-color: #fff;
     margin: 6px 0;
     transition: .3s linear;
+    color:#444
 }
 
 .navbar a {
@@ -121,16 +122,26 @@
  animation: textanim 10s linear infinite  
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 @keyframes textanim {
     25% { 
         content: " A Developer";
     }
 }
 
-.sm a{
-    color:black;
-    font-size: 2200px;
-    margin: 0 10px;
+.sm svg{
+    color:rgb(112, 112, 112);
+    font-size: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.sm svg:hover{
+    color:#48dbfb
 }
 
 
@@ -178,6 +189,16 @@
         font-size: 20px;
         margin: 30px;
     }
+
+    .sticky .navbar-menu a{ 
+        color: #fff;;
+    }
+    
+    .sticky .menu-toggler.active span{ 
+        background-color: #fff;
+    }
+    
+
 
     .navbar-menu.active{
         right: 0;
@@ -540,6 +561,41 @@ section.dark .section-title::after{
     width: 100%; /*상위설정한 크기만큼 맞춰지나봄*/   
     height: 100%; /*너비와 함께 정사각형!*/  
 }
+
+footer{
+    width: 100%;
+    color:#ddd;
+    background-color:#3138469a;
+}
+
+footer .inner-width{ 
+    max-width: 50%;
+    opacity: 100;
+    text-align: center;
+}
+
+footer .copyright { 
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+footer .icons { 
+    padding-bottom: 50px;
+    position: relative;
+}
+
+footer .icons svg{ 
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+footer .icons svg:hover{ 
+   color: #48dbfb;
+}
+
+
+
+
 
 
 @media screen and (max-width:600px){
